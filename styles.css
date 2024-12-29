@@ -1,0 +1,194 @@
+/* General Body Styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #380f66;/*linear-gradient(135deg, #28074a, #491088);*/
+  color: #ffffff;
+  line-height: 1.6;
+}
+
+/* Header Styling */
+header {
+  background: #491088;
+  text-align: center;
+  padding: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+header h1 {
+  font-size: 1.8rem;
+  color: #ff19db;
+  margin: 0;
+}
+
+/* Section Styling */
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem; /* Add spacing around content */
+  margin: 2rem auto; /* Consistent spacing between sections */
+  background: linear-gradient(135deg, #6c1dd0, #bd4de5);
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Section Headings */
+section h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #ff7f1a;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* Buttons Container Styling */
+section .controls {
+  display: flex;
+  flex-direction: column; /* Stack buttons vertically */
+  gap: 1rem; /* Add spacing between buttons */
+}
+/* Temperature Display Styling */
+#temperature-display {
+  font-size: 2rem;
+  color: #ff7f1a;
+  background: linear-gradient(135deg, #491088, #6c1dd0);
+  padding: 1rem 2rem;
+  margin: 10px 0;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  font-weight: bold;
+}
+/* Buttons Styling */
+button {
+  display: inline-block;
+  background: #ff19db;
+  color: #ffffff;
+  border: none;
+  padding: 0.8rem 1.2rem; /* Ensure enough space inside buttons */
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+  width: auto; /* Adjust width based on content */
+}
+
+button:hover {
+  background: #ff7f1a;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+button:active {
+  background: #557555;
+  transform: translateY(0);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
+}
+
+/* Song Name Styling */
+#song-name {
+  font-size: 1.5rem;
+  font-style: italic;
+  color: #ff7f1a;
+  background: linear-gradient(135deg, #491088, #6c1dd0);
+  padding: 1rem 2rem;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Footer Styling */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #491088;
+  color: #ffffff;
+  box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.5);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    /* Adjust layout and font sizes for smaller screens */
+  body {
+    font-size: 14px;
+  }
+  .controls {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  section {
+    margin: 1rem 0.5rem;
+    padding: 1rem;
+  }
+
+  button {
+    width: 100%; /* Make buttons full-width on smaller screens */
+    text-align: center;
+  }
+}
+
+/* Toggle Switch Styling */
+.toggle-switch {
+  position: relative;
+  display: inline-block;
+  width: 120px;
+  height: 30px;
+  margin: 1rem 0;
+}
+
+.toggle-switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #491088; /* Default background color */
+  
+  border-radius: 30px;
+  transition: background-color 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 22px;
+  width: 22px;
+  left: 4px;
+  bottom: 4px;
+  background-color: #fff;
+  border-radius: 50%;
+  transition: transform 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #ff19db; /* Active state color*/ 
+  
+
+}
+
+input:checked + .slider:before {
+  transform: translateX(85px); /* Move the toggle to the right */
+}
+
+/* Status Text Styling */
+#light-status {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  color: #ffffff;
+}
+

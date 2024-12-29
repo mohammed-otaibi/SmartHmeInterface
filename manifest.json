@@ -1,0 +1,21 @@
+{
+  "name": "HarmonyHub",
+  "short_name": "HarmonyHub",
+  "description": "Control your smart home easily from your mobile device.",
+  "icons": [
+    {
+      "src": "icons/icon-192x192.jpeg",
+      "sizes": "192x192",
+      "type": "image/jpeg"
+    },
+    {
+      "src": "icons/icon-512x512.jpeg",
+      "sizes": "512x512",
+      "type": "image/jpeg"
+    }
+  ],
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#380f66",
+  "theme_color": "#bd4de5"
+}

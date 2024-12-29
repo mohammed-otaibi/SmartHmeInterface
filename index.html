@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Home Interface</title>
+  <!-- Font Awesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="manifest" href="manifest.json">
+</head>
+<body>
+  <!-- Header Section -->
+  <header>
+    <h1><i class="fas fa-home"></i> HarmonyHub</h1>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Lighting Section -->
+    <section id="lighting">
+      <h2><i class="fas fa-lightbulb"></i> Lighting Control</h2>
+      <div class="controls">
+        <!-- Toggle Switch for Lighting -->
+        <label class="toggle-switch">
+          <input type="checkbox" id="light-toggle">
+          <span class="slider"></span>
+        </label>
+        <p id="light-status">Lights are OFF</p>
+      </div>
+    </section>
+
+
+    <!-- Temperature Section -->
+    <section id="temperature">
+      <h2><i class="fas fa-thermometer-half"></i> Temperature Control</h2>
+      <div class="controls">
+        <p id="temperature-display">78°F</p>
+        <button id="temp-increase"><i class="fas fa-arrow-up"></i> Increase Temperature</button>
+        <button id="temp-decrease"><i class="fas fa-arrow-down"></i> Decrease Temperature</button>
+      </div>
+    </section>
+
+<!-- Music Section -->
+    <section id="music">
+      <h2><i class="fas fa-music"></i> Music Preferences</h2>
+      <div class="controls">
+        <p id="song-name">No song is playing</p>
+        <button id="play-music"><i class="fas fa-play"></i> Play Music</button>
+        <button id="pause-music"><i class="fas fa-pause"></i> Pause Music</button>
+        <button id="next-track"><i class="fas fa-forward"></i> Next Track</button>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 Smart Home Inc. All rights reserved.</p>
+  </footer>
+  <script src="script.js"></script>
+
+</body>
+</html>
